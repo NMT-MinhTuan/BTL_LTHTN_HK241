@@ -1,0 +1,434 @@
+[0;32mI (13) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time 01:23:28[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (16) boot: chip revision: v3.0[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=26954h (158036) map[0m
+[0;32mI (142) esp_image: segment 1: paddr=0003697c vaddr=3ffb0000 size=034b8h ( 13496) load[0m
+[0;32mI (148) esp_image: segment 2: paddr=00039e3c vaddr=40080000 size=061dch ( 25052) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=9f6e8h (653032) map[0m
+[0;32mI (394) esp_image: segment 4: paddr=000df710 vaddr=400861dc size=107c4h ( 67524) load[0m
+[0;32mI (434) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (434) boot: Disabling RNG early entropy source...[0m
+[0;32mI (445) cpu_start: Multicore app[0m
+[0;32mI (445) cpu_start: Pro cpu up.[0m
+[0;32mI (446) cpu_start: Starting app cpu, entry point is 0x400813e4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (464) cpu_start: Pro cpu start user code[0m
+[0;32mI (464) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (464) cpu_start: Application information:[0m
+[0;32mI (468) cpu_start: Project name:     i2c-simple[0m
+[0;32mI (474) cpu_start: App version:      1[0m
+[0;32mI (478) cpu_start: Compile time:     Nov 30 2024 01:23:24[0m
+[0;32mI (484) cpu_start: ELF file SHA256:  c410855a54d88cd1...[0m
+[0;32mI (490) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (495) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (500) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (505) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (510) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (517) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (523) heap_init: At 3FFB77F8 len 00028808 (162 KiB): DRAM[0m
+[0;32mI (529) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (536) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (542) heap_init: At 400969A0 len 00009660 (37 KiB): IRAM[0m
+[0;32mI (550) spi_flash: detected chip: generic[0m
+[0;32mI (553) spi_flash: flash io: dio[0m
+[0;33mW (557) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (571) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (575) app_start: Starting scheduler on CPU1[0m
+I (575) main_task: Started on CPU0[0m
+[0;32mI (585) main_task: Calling app_main()[0m
+[0;32mI (585) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (595) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (605) SIM_A7680C: Sent command: AT[0m
+[0;32mI (1605) SIM_A7680C: Sent command: ATI[0m
+[0;32mI (2605) SIM_A7680C: Sent command: AT+CPIN?[0m
+[0;32mI (3605) SIM_A7680C: Sent command: AT+CSQ[0m
+[0;32mI (4605) SIM_A7680C: Sent command: AT+CIMI[0m
+[0;32mI (5605) SIM_A7680C: Sent command: AT+CNMI=2,2,0,0,0[0m
+[0;32mI (6605) SIM_A7680C: Received: 
+*ATREADY: 1
+
+*ISIMAID: "A0000000871004FFFFFFFF8907090000"
+
++CPIN: READY
+AT+CIMI
+452040937473961
+
+OK
+
+SMS DONE
+
++CGEV: NW PDN ACT 1
+AT+CNMI=2,2,0,0,0
+OK
+[0m
+[0;32mI (6605) SIM_A7680C: SMS Response: 
+*ATREADY: 1
+
+*ISIMAID: "A0000000871004FFFFFFFF8907090000"
+
++CPIN: READY
+AT+CIMI
+452040937473961
+
+OK
+
+SMS DONE
+
++CGEV: NW PDN ACT 1
+AT+CNMI=2,2,0,0,0
+OK
+[0m
+[0;32mI (6625) SIM_A7680C: Sent command: AT+CMGD=1,4[0m
+[0;32mI (7865) SIM_A7680C: Received: AT+CMGD=1,4
+OK
+
++CGEV: ME PDN ACT 8,0
+[0m
+[0;32mI (7865) SIM_A7680C: SMS Response: AT+CMGD=1,4
+OK
+
++CGEV: ME PDN ACT 8,0
+[0m
+I (12665) wifi:wifi driver task: 3ffc1544, prio:23, stack:6656, core=0
+[0;32mI (12665) system_api: Base MAC address is not set[0m
+[0;32mI (12665) system_api: read default base MAC address from EFUSE[0m
+I (12675) wifi:wifi firmware version: e2d0ad8
+I (12675) wifi:wifi certification version: v7.0
+I (12675) wifi:config NVS flash: enabled
+I (12675) wifi:config nano formating: disabled
+I (12685) wifi:Init data frame dynamic rx buffer num: 32
+I (12685) wifi:Init management frame dynamic rx buffer num: 32
+I (12695) wifi:Init management short buffer num: 32
+I (12695) wifi:Init dynamic tx buffer num: 32
+I (12705) wifi:Init static rx buffer size: 1600
+I (12705) wifi:Init static rx buffer num: 10
+I (12715) wifi:Init dynamic rx buffer num: 32
+[0;32mI (12715) wifi_init: rx ba win: 6[0m
+[0;32mI (12715) wifi_init: tcpip mbox: 32[0m
+[0;32mI (12725) wifi_init: udp mbox: 6[0m
+[0;32mI (12725) wifi_init: tcp mbox: 6[0m
+[0;32mI (12735) wifi_init: tcp tx win: 5744[0m
+[0;32mI (12735) wifi_init: tcp rx win: 5744[0m
+[0;32mI (12745) wifi_init: tcp mss: 1440[0m
+[0;32mI (12745) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (12745) wifi_init: WiFi RX IRAM OP enabled[0m
+I (12755) wifi:Set ps type: 0
+
+[0;32mI (12755) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (12845) wifi:mode : sta (94:e6:86:70:30:54)
+I (12845) wifi:enable tsf
+[0;32mI (12855) tutorial: Wi-Fi started, connecting to AP...[0m
+I (14075) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (15175) wifi:state: init -> auth (b0)
+I (15175) wifi:state: auth -> init (8a0)
+I (15175) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (17605) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (17605) wifi:state: init -> auth (b0)
+I (17615) wifi:state: auth -> assoc (0)
+I (17645) wifi:state: assoc -> run (10)
+I (17675) wifi:connected with TDLOGY, aid = 3, channel 11, BW20, bssid = 00:c8:96:4e:92:09
+I (17675) wifi:security: WPA2-PSK, phy: bgn, rssi: -37
+I (17675) wifi:pm start, type: 0
+
+[0;32mI (17685) tutorial: Wi-Fi connected[0m
+I (17685) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:4e:92:09), tid:7, ssn:0, winSize:64
+I (17705) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (17785) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:4e:92:09), tid:6, ssn:2, winSize:64
+[0;32mI (18685) esp_netif_handlers: sta ip: 192.168.100.159, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;31mE (18685) esp32: successful to connect to Wi-Fi network[0m
+[0;32mI (18685) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (18685) main_task: Returned from app_main()[0m
+[0;32mI (19185) SHT300: Temperature: 27.98 C, Humidity: 96.09 %[0m
+[0;32mI (19515) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (19515) MQTT_EXAMPLE: sent publish successful, msg_id=10692[0m
+[0;32mI (19525) MQTT_EXAMPLE: sent subscribe successful, msg_id=17592[0m
+[0;32mI (19685) SHT300: Temperature: 27.98 C, Humidity: 96.15 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 27.98}
+===========1==========
+[0;32mI (19685) MQTT_EXAMPLE: Sent message with ID: 37868[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 96.15}
+===========1==========
+[0;32mI (19695) MQTT_EXAMPLE: Sent message with ID: 48226[0m
+[0;32mI (19785) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=10692[0m
+[0;32mI (21975) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=17592[0m
+[0;32mI (21985) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=37868[0m
+[0;32mI (21985) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=48226[0m
+[0;32mI (30205) SHT300: Temperature: 28.32 C, Humidity: 96.75 %[0m
+[0;32mI (30705) SHT300: Temperature: 28.33 C, Humidity: 96.66 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 28.32}
+===========1==========
+[0;32mI (30705) MQTT_EXAMPLE: Sent message with ID: 63593[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 96.66}
+===========1==========
+[0;32mI (30715) MQTT_EXAMPLE: Sent message with ID: 28089[0m
+[0;32mI (30975) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=63593[0m
+[0;32mI (32575) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=28089[0m
+[0;32mI (41225) SHT300: Temperature: 28.60 C, Humidity: 96.78 %[0m
+[0;32mI (41725) SHT300: Temperature: 28.61 C, Humidity: 96.76 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 28.60}
+===========1==========
+[0;32mI (41725) MQTT_EXAMPLE: Sent message with ID: 27127[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 96.76}
+===========1==========
+[0;32mI (41735) MQTT_EXAMPLE: Sent message with ID: 43092[0m
+[0;32mI (42005) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=27127[0m
+[0;32mI (42285) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=43092[0m
+[0;32mI (52245) SHT300: Temperature: 28.97 C, Humidity: 97.08 %[0m
+[0;32mI (52745) SHT300: Temperature: 28.97 C, Humidity: 97.13 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 28.97}
+===========1==========
+[0;32mI (52745) MQTT_EXAMPLE: Sent message with ID: 12009[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 97.13}
+===========1==========
+[0;32mI (52755) MQTT_EXAMPLE: Sent message with ID: 8577[0m
+[0;32mI (53035) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=12009[0m
+[0;32mI (53295) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=8577[0m
+[0;32mI (63265) SHT300: Temperature: 29.69 C, Humidity: 98.33 %[0m
+[0;32mI (63765) SHT300: Temperature: 29.77 C, Humidity: 98.47 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.69}
+===========1==========
+[0;32mI (63765) MQTT_EXAMPLE: Sent message with ID: 32414[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 98.47}
+===========1==========
+[0;32mI (63775) MQTT_EXAMPLE: Sent message with ID: 5926[0m
+[0;32mI (64035) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=32414[0m
+[0;32mI (64325) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=5926[0m
+[0;32mI (74285) SHT300: Temperature: 29.70 C, Humidity: 93.84 %[0m
+[0;32mI (74785) SHT300: Temperature: 29.72 C, Humidity: 92.48 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.70}
+===========1==========
+[0;32mI (74785) MQTT_EXAMPLE: Sent message with ID: 62727[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 92.48}
+===========1==========
+[0;32mI (74795) MQTT_EXAMPLE: Sent message with ID: 63312[0m
+[0;32mI (75055) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=62727[0m
+[0;32mI (75325) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=63312[0m
+[0;32mI (85305) SHT300: Temperature: 29.44 C, Humidity: 67.83 %[0m
+[0;32mI (85805) SHT300: Temperature: 29.42 C, Humidity: 67.34 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.44}
+===========1==========
+[0;32mI (85805) MQTT_EXAMPLE: Sent message with ID: 14115[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 67.34}
+===========1==========
+[0;32mI (85825) MQTT_EXAMPLE: Sent message with ID: 41177[0m
+[0;32mI (86095) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=14115[0m
+[0;32mI (86375) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=41177[0m
+[0;32mI (87035) SIM_A7680C: Received: 
++CMT: "+84778786442","","24/11/30,23:09:37+28"
+check
+[0m
+[0;32mI (87035) SIM_A7680C: SMS Response: 
++CMT: "+84778786442","","24/11/30,23:09:37+28"
+check
+[0m
+[0;32mI (87035) SIM_A7680C: Received SMS from: +84778786442[0m
+[0;32mI (87045) SIM_A7680C: Message: check[0m
+[0;32mI (87045) SIM_A7680C: Sent command: AT+CMGD=1,4[0m
+[0;32mI (88555) SHT300: Temperature: 29.39 C, Humidity: 65.41 %[0m
+[0;32mI (89055) SHT300: Temperature: 29.43 C, Humidity: 65.03 %[0m
+[0;32mI (89055) SIM_A7680C: Sent command: AT+CMGF=1[0m
+[0;32mI (90055) SIM_A7680C: Sent command: AT+CMGS="+84778786442"[0m
+[0;32mI (91055) SIM_A7680C: SMS sent to +84778786442: temperature: 29.39 *C
+humidity: 65.03 %[0m
+[0;32mI (92725) SIM_A7680C: Received: AT+CMGD=1,4
+OK
+AT+CMGF=1
+OK
+AT+CMGS="+84778786442"
+> temperature: 29.39 *C
+humidity: 65.03 %
++CMGS: 21
+
+OK
+[0m
+[0;32mI (92725) SIM_A7680C: SMS Response: AT+CMGD=1,4
+OK
+AT+CMGF=1
+OK
+AT+CMGS="+84778786442"
+> temperature: 29.39 *C
+humidity: 65.03 %
++CMGS: 21
+
+OK
+[0m
+[0;32mI (96325) SHT300: Temperature: 29.36 C, Humidity: 62.91 %[0m
+[0;32mI (96825) SHT300: Temperature: 29.34 C, Humidity: 62.82 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.36}
+===========1==========
+[0;32mI (96825) MQTT_EXAMPLE: Sent message with ID: 30534[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 62.82}
+===========1==========
+[0;32mI (96835) MQTT_EXAMPLE: Sent message with ID: 33518[0m
+[0;32mI (97105) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=30534[0m
+[0;32mI (97375) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=33518[0m
+[0;32mI (102395) SIM_A7680C: Received: 
++CMT: "+84778786442","","24/11/30,23:09:53+28"
+check
+[0m
+[0;32mI (102395) SIM_A7680C: SMS Response: 
++CMT: "+84778786442","","24/11/30,23:09:53+28"
+check
+[0m
+[0;32mI (102395) SIM_A7680C: Received SMS from: +84778786442[0m
+[0;32mI (102405) SIM_A7680C: Message: check[0m
+[0;32mI (102405) SIM_A7680C: Sent command: AT+CMGD=1,4[0m
+[0;32mI (103915) SHT300: Temperature: 29.26 C, Humidity: 62.32 %[0m
+[0;32mI (104415) SHT300: Temperature: 29.29 C, Humidity: 62.33 %[0m
+[0;32mI (104415) SIM_A7680C: Sent command: AT+CMGF=1[0m
+[0;32mI (105415) SIM_A7680C: Sent command: AT+CMGS="+84778786442"[0m
+[0;32mI (106415) SIM_A7680C: SMS sent to +84778786442: temperature: 29.26 *C
+humidity: 62.33 %[0m
+[0;32mI (107345) SHT300: Temperature: 29.28 C, Humidity: 62.07 %[0m
+[0;32mI (107415) SIM_A7680C: Received: AT+CMGD=1,4
+OK
+AT+CMGF=1
+OK
+AT+CMGS="+84778786442"
+> temperature: 29.26 *C
+humidity: 62.33 %[0m
+[0;32mI (107415) SIM_A7680C: SMS Response: AT+CMGD=1,4
+OK
+AT+CMGF=1
+OK
+AT+CMGS="+84778786442"
+> temperature: 29.26 *C
+humidity: 62.33 %[0m
+[0;32mI (107845) SHT300: Temperature: 29.28 C, Humidity: 61.93 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.28}
+===========1==========
+[0;32mI (107845) MQTT_EXAMPLE: Sent message with ID: 31066[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 61.93}
+===========1==========
+[0;32mI (107855) MQTT_EXAMPLE: Sent message with ID: 58851[0m
+[0;32mI (108115) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=31066[0m
+[0;32mI (108385) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=58851[0m
+[0;32mI (108775) SIM_A7680C: Received: 
++CMGS: 22
+
+OK
+[0m
+[0;32mI (108775) SIM_A7680C: SMS Response: 
++CMGS: 22
+
+OK
+[0m
+warning!!!
+[0;32mI (116685) SIM_A7680C: Sent command: ATD+84778786442;[0m
+[0;32mI (118775) SIM_A7680C: Received: ATD+84778786442;
+OK
+
++CLCC: 1,0,2,0,0,"+84778786442",145,""
+
++CGEV: NW ACT 8,10
+
++CGEV: NW MODIFY 10,3
+[0m
+[0;32mI (118775) SIM_A7680C: SMS Response: ATD+84778786442;
+OK
+
++CLCC: 1,0,2,0,0,"+84778786442",145,""
+
++CGEV: NW ACT 8,10
+
++CGEV: NW MODIFY 10,3
+[0m
+[0;32mI (118785) SHT300: Temperature: 29.24 C, Humidity: 61.72 %[0m
+[0;32mI (119515) SHT300: Temperature: 29.18 C, Humidity: 61.77 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.24}
+===========1==========
+[0;32mI (119515) MQTT_EXAMPLE: Sent message with ID: 12202[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 61.77}
+===========1==========
+[0;32mI (119525) MQTT_EXAMPLE: Sent message with ID: 50736[0m
+[0;32mI (119785) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=12202[0m
+[0;32mI (120055) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=50736[0m
+[0;32mI (123845) SIM_A7680C: Received: 
++CLCC: 1,0,3,0,0,"+84778786442",145,""
+[0m
+[0;32mI (123845) SIM_A7680C: SMS Response: 
++CLCC: 1,0,3,0,0,"+84778786442",145,""
+[0m
+[0;32mI (130715) SIM_A7680C: Received: 
++CGEV: NW DEACT 8,10
+
++CLCC: 1,0,6,0,0,"+84778786442",145,""
+
+VOICE CALL: END
+
+NO CARRIER
+[0m
+[0;32mI (130715) SIM_A7680C: SMS Response: 
++CGEV: NW DEACT 8,10
+
++CLCC: 1,0,6,0,0,"+84778786442",145,""
+
+VOICE CALL: END
+
+NO CARRIER
+[0m
+[0;32mI (130845) SHT300: Temperature: 29.09 C, Humidity: 61.31 %[0m
+[0;32mI (131345) SHT300: Temperature: 29.07 C, Humidity: 61.30 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 29.09}
+===========1==========
+[0;32mI (131345) MQTT_EXAMPLE: Sent message with ID: 34365[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 61.30}
+===========1==========
+[0;32mI (131355) MQTT_EXAMPLE: Sent message with ID: 29618[0m
+[0;32mI (131615) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=34365[0m
+[0;32mI (131875) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=29618[0m

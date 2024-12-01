@@ -1,0 +1,49 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- idf_monitor on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x40081180: call_start_cpu1 at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/port/cpu_start.c:143
+[0m
+[0;33m0x40082c9f: lock_acquire_generic at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/newlib/locks.c:130
+[0m
+[0;33m0x40081d46: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/panic.c:424
+[0m
+[0;33m0x40086ed9: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/esp_system.c:153
+[0m
+[0;33m0x4008c0fa: abort at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/newlib/abort.c:38
+[0m
+[0;33m0x40082c9f: lock_acquire_generic at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/newlib/locks.c:130
+[0m
+[0;33m0x40082ddd: _lock_acquire_recursive at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/newlib/locks.c:158
+[0m
+[0;33m0x40082e56: __retarget_lock_acquire_recursive at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/newlib/locks.c:314
+[0m
+[0;33m0x400de961: _vfprintf_r at ??:?
+[0m
+[0;33m0x400e1aa5: vprintf at /builds/idf/crosstool-NG/.build/HOST-x86_64-w64-mingw32/xtensa-esp32-elf/src/newlib/newlib/libc/stdio/vprintf.c:34 (discriminator 5)
+[0m
+[0;33m0x400e9125: esp_log_writev at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/log/log.c:200
+[0m
+[0;33m0x4008bfad: esp_log_write at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/log/log.c:210
+[0m
+[0;33m0x400d5b51: abcxyz at D:/esp/btl/main/i2c_simple_main.c:115
+[0m
+[0;33m0x4008326e: input_isr_handler at D:/esp/btl/common/input/input.c:12
+[0m
+[0;33m0x40083372: gpio_isr_loop at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/driver/gpio/gpio.c:430
+ (inlined by) gpio_intr_service at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/driver/gpio/gpio.c:452
+[0m
+[0;33m0x40082a79: _xt_lowint1 at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/xtensa_vectors.S:1118
+[0m
+[0;33m0x4008513f: xt_utils_wait_for_intr at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/xtensa/include/xt_utils.h:81
+ (inlined by) esp_cpu_wait_for_intr at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_hw_support/cpu.c:101
+[0m
+[0;33m0x400d1cef: esp_vApplicationIdleHook at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/freertos_hooks.c:59
+[0m
+[0;33m0x400887fe: prvIdleTask at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/freertos/FreeRTOS-Kernel/tasks.c:4197 (discriminator 1)
+[0m
+[0;33m0x40086ee9: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:149
+[0m
+[0;33m0x40081180: call_start_cpu1 at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/port/cpu_start.c:143
+[0m
+[0m

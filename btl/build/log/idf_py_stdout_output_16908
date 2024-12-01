@@ -1,0 +1,58 @@
+[0;32mI (13) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time 01:23:28[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (16) boot: chip revision: v3.0[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a2d4h ( 41684) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001a2fc vaddr=3ffb0000 size=01f14h (  7956) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001c218 vaddr=40080000 size=03e00h ( 15872) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18854h (100436) map[0m
+[0;32mI (151) esp_image: segment 4: paddr=0003887c vaddr=40083e00 size=094d0h ( 38096) load[0m
+[0;32mI (173) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (173) boot: Disabling RNG early entropy source...[0m
+[0;32mI (185) cpu_start: Multicore app[0m
+[0;32mI (185) cpu_start: Pro cpu up.[0m
+[0;32mI (185) cpu_start: Starting app cpu, entry point is 0x40081174[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (203) cpu_start: Pro cpu start user code[0m
+[0;32mI (203) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (203) cpu_start: Application information:[0m
+[0;32mI (208) cpu_start: Project name:     i2c-simple[0m
+[0;32mI (213) cpu_start: App version:      1[0m
+[0;32mI (218) cpu_start: Compile time:     Nov 30 2024 01:23:24[0m
+[0;32mI (224) cpu_start: ELF file SHA256:  432968ed6a1d7eb3...[0m
+[0;32mI (230) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (235) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (240) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (245) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (249) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (257) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (263) heap_init: At 3FFB2820 len 0002D7E0 (181 KiB): DRAM[0m
+[0;32mI (269) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (275) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (282) heap_init: At 4008D2D0 len 00012D30 (75 KiB): IRAM[0m
+[0;32mI (289) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (296) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (310) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (315) app_start: Starting scheduler on CPU1[0m
+mI (315) main_task: Started on CPU0[0m
+[0;32mI (325) main_task: Calling app_main()[0m
+[0;32mI (325) main_task: Returned from app_main()[0m
+[0;32mI (825) SHT300: Temperature: 27.87 C, Humidity: 65.94 %[0m
+[0;32mI (1325) SHT300: Temperature: 27.88 C, Humidity: 65.95 %[0m
+[0;32mI (1825) SHT300: Temperature: 27.83 C, Humidity: 65.86 %[0m
+[0;32mI (2325) SHT300: Temperature: 27.87 C, Humidity: 65.90 %[0m
+[0;32mI (2825) SHT300: Temperature: 27.83 C, Humidity: 65.64 %[0m
+[0;32mI (3325) SHT300: Temperature: 27.86 C, Humidity: 65.79 %[0m
+[0;32mI (3825) SHT300: Temperature: 27.87 C, Humidity: 65.76 %[0m
+[0;32mI (4325) SHT300: Temperature: 27.85 C, Humidity: 65.81 %[0m

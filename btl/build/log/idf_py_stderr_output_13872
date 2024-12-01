@@ -1,0 +1,29 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM7 instead...[0m
+[0;33m--- idf_monitor on \\.\COM7 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x400813d4: call_start_cpu1 at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/port/cpu_start.c:143
+[0m
+[0;33m0x400dbac1: i2c_master_init at D:/esp/btl/common/i2c/i2c.c:26 (discriminator 1)
+[0m
+[0;33m0x4008a3c7: _esp_error_check_failed at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40081fd6: panic_abort at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/panic.c:424
+[0m
+[0;33m0x4008a3d1: esp_system_abort at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/esp_system.c:153
+[0m
+[0;33m0x4009102e: abort at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/newlib/abort.c:38
+[0m
+[0;33m0x4008a3c7: _esp_error_check_failed at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x400dbac1: i2c_master_init at D:/esp/btl/common/i2c/i2c.c:26 (discriminator 1)
+[0m
+[0;33m0x400dbbd2: task_i2c at D:/esp/btl/common/i2c/i2c.c:65
+[0m
+[0;33m0x400d7c2f: send_mqtt at D:/esp/btl/main/i2c_simple_main.c:101 (discriminator 1)
+[0m
+[0;33m0x4008a3e1: vPortTaskWrapper at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:149
+[0m
+[0;33m0x400813d4: call_start_cpu1 at D:/esp/Espressif/frameworks/esp-idf-v5.0.4/components/esp_system/port/cpu_start.c:143
+[0m
+[0m

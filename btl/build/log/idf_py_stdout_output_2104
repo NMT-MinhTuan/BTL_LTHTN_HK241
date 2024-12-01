@@ -1,0 +1,189 @@
+[0;32mI (13) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time 01:23:28[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (16) boot: chip revision: v3.0[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a864h ( 43108) map[0m
+[0;32mI (101) esp_image: segment 1: paddr=0001a88c vaddr=3ffb0000 size=01ed4h (  7892) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001c768 vaddr=40080000 size=038b0h ( 14512) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=1fc3ch (130108) map[0m
+[0;32mI (162) esp_image: segment 4: paddr=0003fc64 vaddr=400838b0 size=09274h ( 37492) load[0m
+[0;32mI (184) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (184) boot: Disabling RNG early entropy source...[0m
+[0;32mI (196) cpu_start: Multicore app[0m
+[0;32mI (196) cpu_start: Pro cpu up.[0m
+[0;32mI (196) cpu_start: Starting app cpu, entry point is 0x40081148[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (214) cpu_start: Pro cpu start user code[0m
+[0;32mI (214) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (214) cpu_start: Application information:[0m
+[0;32mI (219) cpu_start: Project name:     i2c-simple[0m
+[0;32mI (224) cpu_start: App version:      1[0m
+[0;32mI (228) cpu_start: Compile time:     Nov 30 2024 01:23:24[0m
+[0;32mI (234) cpu_start: ELF file SHA256:  659660aba4fe09fa...[0m
+[0;32mI (240) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (246) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (250) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (255) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (260) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (267) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (273) heap_init: At 3FFB27F0 len 0002D810 (182 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (286) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 4008CB24 len 000134DC (77 KiB): IRAM[0m
+[0;32mI (300) spi_flash: detected chip: generic[0m
+[0;32mI (303) spi_flash: flash io: dio[0m
+[0;33mW (307) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (321) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (325) app_start: Starting scheduler on CPU1[0m
+mI (325) main_task: Started on CPU0[0m
+[0;32mI (335) main_task: Calling app_main()[0m
+[0;32mI (335) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (345) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (355) SIM_A7680C: Sent command: AT[0m
+[0;32mI (5355) SIM_A7680C: Sent command: ATI[0m
+[0;32mI (6565) SIM_A7680C: Received: 
+*ATREADY: 1
+
+*ISIMAID: "A0000000871004FFFFFFFF8907090000"
+
++CPIN: READY
+
+SMS DONE
+ATI
+Manufacturer: SIMCOM INCORPORATED
+Model: A7680C-LANS
+Revision: V12.4.01
+IMEI: 866940075593343
+
+OK
+
++CGEV: NW PDN ACT 1
+[0m
+[0;32mI (6575) SIM_A7680C: SMS Response: 
+*ATREADY: 1
+
+*ISIMAID: "A0000000871004FFFFFFFF8907090000"
+
++CPIN: READY
+
+SMS DONE
+ATI
+Manufacturer: SIMCOM INCORPORATED
+Model: A7680C-LANS
+Revision: V12.4.01
+IMEI: 866940075593343
+
+OK
+
++CGEV: NW PDN ACT 1
+[0m
+[0;32mI (8065) SIM_A7680C: Received: 
++CGEV: ME PDN ACT 8,0
+[0m
+[0;32mI (8065) SIM_A7680C: SMS Response: 
++CGEV: ME PDN ACT 8,0
+[0m
+[0;32mI (10355) SIM_A7680C: Sent command: AT+CPIN?[0m
+[0;32mI (11355) SIM_A7680C: Received: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (11355) SIM_A7680C: SMS Response: AT+CPIN?
++CPIN: READY
+
+OK
+[0m
+[0;32mI (15355) SIM_A7680C: Sent command: AT+CSQ[0m
+[0;32mI (16355) SIM_A7680C: Received: AT+CSQ
++CSQ: 15,99
+
+OK
+[0m
+[0;32mI (16355) SIM_A7680C: SMS Response: AT+CSQ
++CSQ: 15,99
+
+OK
+[0m
+[0;32mI (20355) SIM_A7680C: Sent command: AT+CIMI[0m
+[0;32mI (21355) SIM_A7680C: Received: AT+CIMI
+452040937473961
+
+OK
+[0m
+[0;32mI (21355) SIM_A7680C: SMS Response: AT+CIMI
+452040937473961
+
+OK
+[0m
+[0;32mI (25355) SIM_A7680C: Sent command: AT+CNMI=2,2,0,0,0[0m
+[0;32mI (26355) SIM_A7680C: Received: AT+CNMI=2,2,0,0,0
+OK
+[0m
+[0;32mI (26355) SIM_A7680C: SMS Response: AT+CNMI=2,2,0,0,0
+OK
+[0m
+[0;32mI (30355) SIM_A7680C: Sent command: AT+CMGD=1,4[0m
+[0;32mI (31355) SIM_A7680C: Received: AT+CMGD=1,4
+OK
+[0m
+[0;32mI (31355) SIM_A7680C: SMS Response: AT+CMGD=1,4
+OK
+[0m
+[0;32mI (35355) main_task: Returned from app_main()[0m
+0
+0
+0
+warning!!!
+1
+[0;32mI (40245) SIM_A7680C: Received: ATD+84778786442;
+OK
+
++CLCC: 1,0,2,0,0,"+84778786442",145,""
+
++CGEV: NW ACT 8,10
+[0m
+[0;32mI (40245) SIM_A7680C: SMS Response: ATD+84778786442;
+OK
+
++CLCC: 1,0,2,0,0,"+84778786442",145,""
+
++CGEV: NW ACT 8,10
+[0m
+[0;32mI (46675) SIM_A7680C: Received: 
++CLCC: 1,0,3,0,0,"+84778786442",145,""
+[0m
+[0;32mI (46675) SIM_A7680C: SMS Response: 
++CLCC: 1,0,3,0,0,"+84778786442",145,""
+[0m
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0

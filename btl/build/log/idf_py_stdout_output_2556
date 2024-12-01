@@ -1,0 +1,146 @@
+[0;32mI (13) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time 01:23:28[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (16) boot: chip revision: v3.0[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0b1fch ( 45564) map[0m
+[0;32mI (102) esp_image: segment 1: paddr=0001b224 vaddr=3ffb0000 size=01f14h (  7956) load[0m
+[0;32mI (105) esp_image: segment 2: paddr=0001d140 vaddr=40080000 size=02ed8h ( 11992) load[0m
+[0;32mI (112) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=21608h (136712) map[0m
+[0;32mI (165) esp_image: segment 4: paddr=00041630 vaddr=40082ed8 size=0a4f0h ( 42224) load[0m
+[0;32mI (189) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (190) boot: Disabling RNG early entropy source...[0m
+[0;32mI (201) cpu_start: Multicore app[0m
+[0;32mI (201) cpu_start: Pro cpu up.[0m
+[0;32mI (201) cpu_start: Starting app cpu, entry point is 0x40081188[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (219) cpu_start: Pro cpu start user code[0m
+[0;32mI (219) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (219) cpu_start: Application information:[0m
+[0;32mI (224) cpu_start: Project name:     i2c-simple[0m
+[0;32mI (229) cpu_start: App version:      1[0m
+[0;32mI (234) cpu_start: Compile time:     Nov 30 2024 01:23:24[0m
+[0;32mI (240) cpu_start: ELF file SHA256:  2f4494760a68b155...[0m
+[0;32mI (246) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (251) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (256) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (261) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (266) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (273) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (279) heap_init: At 3FFB2840 len 0002D7C0 (181 KiB): DRAM[0m
+[0;32mI (285) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (291) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (298) heap_init: At 4008D3C8 len 00012C38 (75 KiB): IRAM[0m
+[0;32mI (305) spi_flash: detected chip: generic[0m
+[0;32mI (309) spi_flash: flash io: dio[0m
+[0;33mW (313) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (327) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (331) app_start: Starting scheduler on CPU1[0m
+mI (331) main_task: Started on CPU0[0m
+[0;32mI (341) main_task: Calling app_main()[0m
+[0;32mI (341) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (351) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (361) SIM_A7680C: Sent command: AT+CMGF=1[0m
+[0;32mI (851) SHT300: Temperature: 27.54 C, Humidity: 66.74 %[0m
+[0;32mI (1351) SHT300: Temperature: 27.46 C, Humidity: 66.77 %[0m
+[0;32mI (1361) SIM_A7680C: Sent command: AT+CNMI=2,2,0,0,0[0m
+[0;32mI (1851) SHT300: Temperature: 27.45 C, Humidity: 66.76 %[0m
+[0;32mI (2351) SHT300: Temperature: 27.50 C, Humidity: 66.81 %[0m
+[0;32mI (2361) SIM_A7680C: Sent command: AT+CMGD=1,4[0m
+[0;32mI (2851) SHT300: Temperature: 27.49 C, Humidity: 66.80 %[0m
+[0;32mI (3351) SHT300: Temperature: 27.52 C, Humidity: 66.76 %[0m
+[0;32mI (3361) SIM_A7680C: Sent command: AT+CMGF=1[0m
+[0;32mI (3851) SHT300: Temperature: 27.50 C, Humidity: 66.83 %[0m
+[0;32mI (4351) SHT300: Temperature: 27.49 C, Humidity: 66.77 %[0m
+[0;32mI (4361) SIM_A7680C: Sent command: AT+CMGS="0778786442"[0m
+[0;32mI (4851) SHT300: Temperature: 27.48 C, Humidity: 66.81 %[0m
+[0;32mI (5351) SHT300: Temperature: 27.48 C, Humidity: 66.77 %[0m
+[0;32mI (5361) SIM_A7680C: SMS sent to 0778786442: vinh ngu[0m
+[0;32mI (5361) main_task: Returned from app_main()[0m
+[0;32mI (5851) SHT300: Temperature: 27.48 C, Humidity: 66.88 %[0m
+[0;32mI (6351) SHT300: Temperature: 27.54 C, Humidity: 66.84 %[0m
+[0;32mI (6851) SHT300: Temperature: 27.50 C, Humidity: 66.79 %[0m
+[0;32mI (7351) SHT300: Temperature: 27.50 C, Humidity: 66.93 %[0m
+[0;32mI (7851) SHT300: Temperature: 27.47 C, Humidity: 66.75 %[0m
+[0;32mI (8351) SHT300: Temperature: 27.50 C, Humidity: 66.87 %[0m
+[0;32mI (8851) SHT300: Temperature: 27.47 C, Humidity: 66.84 %[0m
+[0;32mI (9351) SHT300: Temperature: 27.50 C, Humidity: 66.82 %[0m
+[0;32mI (9851) SHT300: Temperature: 27.49 C, Humidity: 66.91 %[0m
+[0;32mI (10351) SHT300: Temperature: 27.48 C, Humidity: 66.82 %[0m
+[0;32mI (10851) SHT300: Temperature: 27.50 C, Humidity: 66.86 %[0m
+[0;32mI (11351) SHT300: Temperature: 27.47 C, Humidity: 66.87 %[0m
+[0;32mI (11851) SHT300: Temperature: 27.51 C, Humidity: 66.81 %[0m
+[0;32mI (12351) SHT300: Temperature: 27.48 C, Humidity: 66.84 %[0m
+[0;32mI (12851) SHT300: Temperature: 27.49 C, Humidity: 66.84 %[0m
+[0;32mI (13351) SHT300: Temperature: 27.46 C, Humidity: 66.76 %[0m
+[0;32mI (13851) SHT300: Temperature: 27.50 C, Humidity: 66.73 %[0m
+[0;32mI (14351) SHT300: Temperature: 27.50 C, Humidity: 66.79 %[0m
+[0;32mI (14851) SHT300: Temperature: 27.49 C, Humidity: 66.81 %[0m
+[0;32mI (15351) SHT300: Temperature: 27.48 C, Humidity: 66.80 %[0m
+[0;32mI (15851) SHT300: Temperature: 27.50 C, Humidity: 66.69 %[0m
+[0;32mI (16351) SHT300: Temperature: 27.48 C, Humidity: 66.77 %[0m
+[0;32mI (16851) SHT300: Temperature: 27.48 C, Humidity: 66.71 %[0m
+[0;32mI (17351) SHT300: Temperature: 27.48 C, Humidity: 66.78 %[0m
+[0;32mI (17851) SHT300: Temperature: 27.47 C, Humidity: 66.80 %[0m
+[0;32mI (18351) SHT300: Temperature: 27.48 C, Humidity: 66.71 %[0m
+[0;32mI (18851) SHT300: Temperature: 27.49 C, Humidity: 66.81 %[0m
+[0;32mI (19351) SHT300: Temperature: 27.45 C, Humidity: 66.73 %[0m
+[0;32mI (19851) SHT300: Temperature: 27.49 C, Humidity: 66.75 %[0m
+[0;32mI (20351) SHT300: Temperature: 27.49 C, Humidity: 66.76 %[0m
+[0;32mI (20851) SHT300: Temperature: 27.49 C, Humidity: 66.78 %[0m
+[0;32mI (21351) SHT300: Temperature: 27.50 C, Humidity: 66.77 %[0m
+[0;32mI (21851) SHT300: Temperature: 27.48 C, Humidity: 66.79 %[0m
+[0;32mI (22351) SHT300: Temperature: 27.48 C, Humidity: 66.78 %[0m
+[0;32mI (22851) SHT300: Temperature: 27.46 C, Humidity: 66.71 %[0m
+[0;32mI (23351) SHT300: Temperature: 27.48 C, Humidity: 66.75 %[0m
+[0;32mI (23851) SHT300: Temperature: 27.50 C, Humidity: 66.70 %[0m
+[0;32mI (24351) SHT300: Temperature: 27.50 C, Humidity: 66.70 %[0m
+[0;32mI (24851) SHT300: Temperature: 27.49 C, Humidity: 66.68 %[0m
+[0;32mI (25351) SHT300: Temperature: 27.51 C, Humidity: 66.76 %[0m
+[0;32mI (25851) SHT300: Temperature: 27.47 C, Humidity: 66.76 %[0m
+[0;32mI (26351) SHT300: Temperature: 27.46 C, Humidity: 66.79 %[0m
+[0;32mI (26851) SHT300: Temperature: 27.48 C, Humidity: 66.76 %[0m
+[0;32mI (27351) SHT300: Temperature: 27.42 C, Humidity: 66.71 %[0m
+[0;32mI (27851) SHT300: Temperature: 27.48 C, Humidity: 66.73 %[0m
+[0;32mI (28351) SHT300: Temperature: 27.50 C, Humidity: 66.72 %[0m
+[0;32mI (28851) SHT300: Temperature: 27.50 C, Humidity: 66.78 %[0m
+[0;32mI (29351) SHT300: Temperature: 27.45 C, Humidity: 66.76 %[0m
+[0;32mI (29851) SHT300: Temperature: 27.50 C, Humidity: 66.70 %[0m
+[0;32mI (30351) SHT300: Temperature: 27.48 C, Humidity: 66.76 %[0m
+[0;32mI (30851) SHT300: Temperature: 27.45 C, Humidity: 66.74 %[0m
+[0;32mI (31351) SHT300: Temperature: 27.49 C, Humidity: 66.74 %[0m
+[0;32mI (31851) SHT300: Temperature: 27.48 C, Humidity: 66.74 %[0m
+[0;32mI (32351) SHT300: Temperature: 27.50 C, Humidity: 66.72 %[0m
+[0;32mI (32851) SHT300: Temperature: 27.48 C, Humidity: 66.82 %[0m
+[0;32mI (33351) SHT300: Temperature: 27.47 C, Humidity: 66.78 %[0m
+[0;32mI (33851) SHT300: Temperature: 27.50 C, Humidity: 66.80 %[0m
+[0;32mI (34351) SHT300: Temperature: 27.43 C, Humidity: 66.77 %[0m
+[0;32mI (34851) SHT300: Temperature: 27.47 C, Humidity: 66.74 %[0m
+[0;32mI (35351) SHT300: Temperature: 27.48 C, Humidity: 66.81 %[0m
+[0;32mI (35851) SHT300: Temperature: 27.47 C, Humidity: 66.77 %[0m
+[0;32mI (36351) SHT300: Temperature: 27.47 C, Humidity: 66.81 %[0m
+[0;32mI (36851) SHT300: Temperature: 27.49 C, Humidity: 66.86 %[0m
+[0;32mI (37351) SHT300: Temperature: 27.45 C, Humidity: 66.84 %[0m
+[0;32mI (37851) SHT300: Temperature: 27.46 C, Humidity: 66.87 %[0m
+[0;32mI (38351) SHT300: Temperature: 27.49 C, Humidity: 66.82 %[0m
+[0;32mI (38851) SHT300: Temperature: 27.48 C, Humidity: 66.83 %[0m
+[0;32mI (39351) SHT300: Temperature: 27.48 C, Humidity: 66.90 %[0m
+[0;32mI (39851) SHT300: Temperature: 27.49 C, Humidity: 66.79 %[0m
+[0;32mI (40351) SHT300: Temperature: 27.50 C, Humidity: 66.93 %[0m
+[0;32mI (40851) SHT300: Temperature: 27.48 C, Humidity: 66.95 %[0m
+[0;32mI (41351) SHT300: Temperature: 27.48 C, Humidity: 66.93 %[0m
+[0;32mI (41851) SHT300: Temperature: 27.48 C, Humidity: 66.99 %[0m
+[0;32mI (42351) SHT300: Temperature: 27.48 C, Humidity: 66.92 %[0m
+[0;32mI (42851) SHT300: Temperature: 27.46 C, Humidity: 66.98 %[0m
+[0;32mI (43351) SHT300: Temperature: 27.48 C, Humidity: 66.87 %[0m
+[0;32mI (43851) SHT300: Temperature: 27.50 C, Humidity: 66.94 %[0m
+[0;32mI (44351) SHT300: Temperature: 27.46 C, Humidity: 66.90 %[0m

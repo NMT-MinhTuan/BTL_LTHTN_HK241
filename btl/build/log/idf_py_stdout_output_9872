@@ -1,0 +1,171 @@
+[0;32mI (13) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time 01:23:28[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (16) boot: chip revision: v3.0[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=25ccch (154828) map[0m
+[0;32mI (141) esp_image: segment 1: paddr=00035cf4 vaddr=3ffb0000 size=034b8h ( 13496) load[0m
+[0;32mI (147) esp_image: segment 2: paddr=000391b4 vaddr=40080000 size=06e64h ( 28260) load[0m
+[0;32mI (158) esp_image: segment 3: paddr=00040020 vaddr=400d0020 size=988c4h (624836) map[0m
+[0;32mI (384) esp_image: segment 4: paddr=000d88ec vaddr=40086e64 size=0faa4h ( 64164) load[0m
+[0;32mI (422) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (422) boot: Disabling RNG early entropy source...[0m
+[0;32mI (434) cpu_start: Multicore app[0m
+[0;32mI (434) cpu_start: Pro cpu up.[0m
+[0;32mI (434) cpu_start: Starting app cpu, entry point is 0x400813d4[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (452) cpu_start: Pro cpu start user code[0m
+[0;32mI (452) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (452) cpu_start: Application information:[0m
+[0;32mI (457) cpu_start: Project name:     i2c-simple[0m
+[0;32mI (462) cpu_start: App version:      1[0m
+[0;32mI (467) cpu_start: Compile time:     Nov 30 2024 01:23:24[0m
+[0;32mI (473) cpu_start: ELF file SHA256:  bd0dfe78f20a0c13...[0m
+[0;32mI (479) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (484) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (489) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (494) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (499) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (506) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (512) heap_init: At 3FFB7790 len 00028870 (162 KiB): DRAM[0m
+[0;32mI (518) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (524) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (531) heap_init: At 40096908 len 000096F8 (37 KiB): IRAM[0m
+[0;32mI (538) spi_flash: detected chip: generic[0m
+[0;32mI (542) spi_flash: flash io: dio[0m
+[0;33mW (545) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (560) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (564) app_start: Starting scheduler on CPU1[0m
+mI (564) main_task: Started on CPU0[0m
+[0;32mI (574) main_task: Calling app_main()[0m
+[0;32mI (574) gpio: GPIO[15]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (584) gpio: GPIO[14]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+I (624) wifi:wifi driver task: 3ffbf778, prio:23, stack:6656, core=0
+[0;32mI (624) system_api: Base MAC address is not set[0m
+[0;32mI (624) system_api: read default base MAC address from EFUSE[0m
+I (634) wifi:wifi firmware version: e2d0ad8
+I (634) wifi:wifi certification version: v7.0
+I (634) wifi:config NVS flash: enabled
+I (634) wifi:config nano formating: disabled
+I (644) wifi:Init data frame dynamic rx buffer num: 32
+I (644) wifi:Init management frame dynamic rx buffer num: 32
+I (654) wifi:Init management short buffer num: 32
+I (654) wifi:Init dynamic tx buffer num: 32
+I (664) wifi:Init static rx buffer size: 1600
+I (664) wifi:Init static rx buffer num: 10
+I (664) wifi:Init dynamic rx buffer num: 32
+[0;32mI (674) wifi_init: rx ba win: 6[0m
+[0;32mI (674) wifi_init: tcpip mbox: 32[0m
+[0;32mI (684) wifi_init: udp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp mbox: 6[0m
+[0;32mI (684) wifi_init: tcp tx win: 5744[0m
+[0;32mI (694) wifi_init: tcp rx win: 5744[0m
+[0;32mI (694) wifi_init: tcp mss: 1440[0m
+[0;32mI (704) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (704) wifi_init: WiFi RX IRAM OP enabled[0m
+I (714) wifi:Set ps type: 0
+
+[0;32mI (714) phy_init: phy_version 4771,450c73b,Aug 16 2023,11:03:10[0m
+I (794) wifi:mode : sta (94:e6:86:70:30:54)
+I (794) wifi:enable tsf
+[0;32mI (804) tutorial: Wi-Fi started, connecting to AP...[0m
+I (2024) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (3314) wifi:state: init -> auth (b0)
+I (3324) wifi:state: auth -> assoc (0)
+I (3344) wifi:state: assoc -> run (10)
+I (3384) wifi:connected with TDLOGY, aid = 3, channel 11, BW20, bssid = 00:c8:96:4e:92:09
+I (3384) wifi:security: WPA2-PSK, phy: bgn, rssi: -64
+I (3384) wifi:pm start, type: 0
+
+I (3394) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+[0;32mI (3404) tutorial: Wi-Fi connected[0m
+I (3404) wifi:<ba-add>idx:0 (ifx:0, 00:c8:96:4e:92:09), tid:4, ssn:0, winSize:64
+I (3404) wifi:<ba-add>idx:1 (ifx:0, 00:c8:96:4e:92:09), tid:7, ssn:0, winSize:64
+[0;32mI (4404) esp_netif_handlers: sta ip: 192.168.100.159, mask: 255.255.255.0, gw: 192.168.100.1[0m
+[0;31mE (4404) esp32: successful to connect to Wi-Fi network[0m
+[0;32mI (4404) main_task: Returned from app_main()[0m
+[0;32mI (4404) MQTT_EXAMPLE: Other event id:7[0m
+[0;32mI (4904) SHT300: Temperature: 27.17 C, Humidity: 67.14 %[0m
+[0;32mI (5404) SHT300: Temperature: 27.18 C, Humidity: 67.23 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 27.17}
+===========1==========
+[0;32mI (9484) MQTT_EXAMPLE: MQTT_EVENT_CONNECTED[0m
+[0;32mI (9484) MQTT_EXAMPLE: sent publish successful, msg_id=59499[0m
+[0;32mI (9484) MQTT_EXAMPLE: sent subscribe successful, msg_id=60430[0m
+[0;32mI (9494) MQTT_EXAMPLE: Sent message with ID: 34482[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 67.23}
+===========1==========
+[0;32mI (9504) MQTT_EXAMPLE: Sent message with ID: 45386[0m
+[0;32mI (9764) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=59499[0m
+[0;32mI (10044) MQTT_EXAMPLE: MQTT_EVENT_SUBSCRIBED, msg_id=60430[0m
+[0;32mI (10044) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=34482[0m
+[0;32mI (10054) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=45386[0m
+[0;32mI (20004) SHT300: Temperature: 27.16 C, Humidity: 67.35 %[0m
+[0;32mI (20504) SHT300: Temperature: 27.17 C, Humidity: 67.26 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 27.16}
+===========1==========
+[0;32mI (20504) MQTT_EXAMPLE: Sent message with ID: 9987[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 67.26}
+===========1==========
+[0;32mI (20514) MQTT_EXAMPLE: Sent message with ID: 20876[0m
+[0;32mI (20794) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=9987[0m
+[0;32mI (21074) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=20876[0m
+[0;32mI (31024) SHT300: Temperature: 27.14 C, Humidity: 67.25 %[0m
+[0;32mI (31524) SHT300: Temperature: 27.17 C, Humidity: 67.38 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 27.14}
+===========1==========
+[0;32mI (31524) MQTT_EXAMPLE: Sent message with ID: 52371[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 67.38}
+===========1==========
+[0;32mI (31534) MQTT_EXAMPLE: Sent message with ID: 53247[0m
+[0;32mI (31804) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=52371[0m
+[0;32mI (32084) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=53247[0m
+[0;32mI (42044) SHT300: Temperature: 27.25 C, Humidity: 70.41 %[0m
+[0;32mI (42544) SHT300: Temperature: 27.24 C, Humidity: 73.14 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 27.25}
+===========1==========
+[0;32mI (42544) MQTT_EXAMPLE: Sent message with ID: 26742[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 73.14}
+===========1==========
+[0;32mI (42554) MQTT_EXAMPLE: Sent message with ID: 39625[0m
+[0;32mI (42834) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=26742[0m
+[0;32mI (43144) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=39625[0m
+[0;32mI (53064) SHT300: Temperature: 27.64 C, Humidity: 92.84 %[0m
+[0;32mI (53564) SHT300: Temperature: 27.71 C, Humidity: 93.02 %[0m
+===========1==========
+v1/devices/me/telemetry
+{"tem": 27.64}
+===========1==========
+[0;32mI (53564) MQTT_EXAMPLE: Sent message with ID: 792[0m
+===========1==========
+v1/devices/me/telemetry
+{"hum": 93.02}
+===========1==========
+[0;32mI (53574) MQTT_EXAMPLE: Sent message with ID: 15737[0m
+[0;32mI (53854) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=792[0m
+[0;32mI (54144) MQTT_EXAMPLE: MQTT_EVENT_PUBLISHED, msg_id=15737[0m

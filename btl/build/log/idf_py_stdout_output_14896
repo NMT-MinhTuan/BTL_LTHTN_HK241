@@ -1,0 +1,148 @@
+[0;32mI (13) boot: ESP-IDF v5.0.4-dirty 2nd stage bootloader[0m
+[0;32mI (14) boot: compile time 01:23:28[0m
+[0;32mI (14) boot: Multicore bootloader[0m
+[0;32mI (16) boot: chip revision: v3.0[0m
+[0;32mI (20) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (25) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (29) boot.esp32: SPI Flash Size : 2MB[0m
+[0;32mI (34) boot: Enabling RNG early entropy source...[0m
+[0;32mI (39) boot: Partition Table:[0m
+[0;32mI (43) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (50) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (57) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (65) boot:  2 factory          factory app      00 00 00010000 00100000[0m
+[0;32mI (72) boot: End of partition table[0m
+[0;32mI (77) esp_image: segment 0: paddr=00010020 vaddr=3f400020 size=0a4ach ( 42156) map[0m
+[0;32mI (100) esp_image: segment 1: paddr=0001a4d4 vaddr=3ffb0000 size=01f14h (  7956) load[0m
+[0;32mI (104) esp_image: segment 2: paddr=0001c3f0 vaddr=40080000 size=03c28h ( 15400) load[0m
+[0;32mI (113) esp_image: segment 3: paddr=00020020 vaddr=400d0020 size=18ed4h (102100) map[0m
+[0;32mI (152) esp_image: segment 4: paddr=00038efc vaddr=40083c28 size=096a8h ( 38568) load[0m
+[0;32mI (174) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (174) boot: Disabling RNG early entropy source...[0m
+[0;32mI (186) cpu_start: Multicore app[0m
+[0;32mI (186) cpu_start: Pro cpu up.[0m
+[0;32mI (186) cpu_start: Starting app cpu, entry point is 0x40081174[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (204) cpu_start: Pro cpu start user code[0m
+[0;32mI (204) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (204) cpu_start: Application information:[0m
+[0;32mI (209) cpu_start: Project name:     i2c-simple[0m
+[0;32mI (214) cpu_start: App version:      1[0m
+[0;32mI (219) cpu_start: Compile time:     Nov 30 2024 01:23:24[0m
+[0;32mI (225) cpu_start: ELF file SHA256:  fb590835f2de14aa...[0m
+[0;32mI (231) cpu_start: ESP-IDF:          v5.0.4-dirty[0m
+[0;32mI (236) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (241) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (246) cpu_start: Chip rev:         v3.0[0m
+[0;32mI (250) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (258) heap_init: At 3FFAE6E0 len 00001920 (6 KiB): DRAM[0m
+[0;32mI (264) heap_init: At 3FFB2838 len 0002D7C8 (181 KiB): DRAM[0m
+[0;32mI (270) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (276) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (283) heap_init: At 4008D2D0 len 00012D30 (75 KiB): IRAM[0m
+[0;32mI (290) spi_flash: detected chip: generic[0m
+[0;32mI (293) spi_flash: flash io: dio[0m
+[0;33mW (297) spi_flash: Detected size(4096k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (311) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (316) app_start: Starting scheduler on CPU1[0m
+mI (316) main_task: Started on CPU0[0m
+[0;32mI (326) main_task: Calling app_main()[0m
+[0;32mI (326) gpio: GPIO[18]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+[0;32mI (336) main_task: Returned from app_main()[0m
+[0;32mI (826) SHT300: Temperature: 27.54 C, Humidity: 67.02 %[0m
+[0;32mI (1326) SHT300: Temperature: 27.54 C, Humidity: 66.94 %[0m
+[0;32mI (1826) SHT300: Temperature: 27.56 C, Humidity: 67.01 %[0m
+[0;32mI (2326) SHT300: Temperature: 27.54 C, Humidity: 66.99 %[0m
+warning!!!![0;32mI (2826) SHT300: Temperature: 27.55 C, Humidity: 67.05 %[0m
+[0;32mI (3326) SHT300: Temperature: 27.54 C, Humidity: 67.08 %[0m
+warning!!!![0;32mI (3826) SHT300: Temperature: 27.54 C, Humidity: 67.10 %[0m
+[0;32mI (4326) SHT300: Temperature: 27.52 C, Humidity: 67.01 %[0m
+warning!!!![0;32mI (4826) SHT300: Temperature: 27.54 C, Humidity: 67.04 %[0m
+[0;32mI (5326) SHT300: Temperature: 27.53 C, Humidity: 67.05 %[0m
+[0;32mI (5826) SHT300: Temperature: 27.56 C, Humidity: 67.03 %[0m
+[0;32mI (6326) SHT300: Temperature: 27.55 C, Humidity: 67.05 %[0m
+warning!!!![0;32mI (6826) SHT300: Temperature: 27.53 C, Humidity: 67.08 %[0m
+[0;32mI (7326) SHT300: Temperature: 27.54 C, Humidity: 67.03 %[0m
+warning!!!![0;32mI (7826) SHT300: Temperature: 27.51 C, Humidity: 67.01 %[0m
+[0;32mI (8326) SHT300: Temperature: 27.53 C, Humidity: 67.05 %[0m
+warning!!!![0;32mI (8826) SHT300: Temperature: 27.54 C, Humidity: 67.10 %[0m
+[0;32mI (9326) SHT300: Temperature: 27.57 C, Humidity: 67.02 %[0m
+warning!!!![0;32mI (9826) SHT300: Temperature: 27.53 C, Humidity: 66.99 %[0m
+[0;32mI (10326) SHT300: Temperature: 27.52 C, Humidity: 66.93 %[0m
+warning!!!![0;32mI (10826) SHT300: Temperature: 27.52 C, Humidity: 67.00 %[0m
+[0;32mI (11326) SHT300: Temperature: 27.54 C, Humidity: 66.94 %[0m
+warning!!!![0;32mI (11826) SHT300: Temperature: 27.51 C, Humidity: 66.89 %[0m
+[0;32mI (12326) SHT300: Temperature: 27.54 C, Humidity: 66.97 %[0m
+warning!!!![0;32mI (12826) SHT300: Temperature: 27.53 C, Humidity: 66.89 %[0m
+[0;32mI (13326) SHT300: Temperature: 27.54 C, Humidity: 66.80 %[0m
+[0;32mI (13826) SHT300: Temperature: 27.55 C, Humidity: 66.88 %[0m
+[0;32mI (14326) SHT300: Temperature: 27.57 C, Humidity: 66.86 %[0m
+[0;32mI (14826) SHT300: Temperature: 27.53 C, Humidity: 66.89 %[0m
+[0;32mI (15326) SHT300: Temperature: 27.52 C, Humidity: 66.83 %[0m
+[0;32mI (15826) SHT300: Temperature: 27.55 C, Humidity: 66.84 %[0m
+[0;32mI (16326) SHT300: Temperature: 27.54 C, Humidity: 66.80 %[0m
+[0;32mI (16826) SHT300: Temperature: 27.54 C, Humidity: 66.91 %[0m
+[0;32mI (17326) SHT300: Temperature: 27.53 C, Humidity: 66.79 %[0m
+[0;32mI (17826) SHT300: Temperature: 27.55 C, Humidity: 66.81 %[0m
+[0;32mI (18326) SHT300: Temperature: 27.54 C, Humidity: 66.79 %[0m
+[0;32mI (18826) SHT300: Temperature: 27.54 C, Humidity: 66.78 %[0m
+[0;32mI (19326) SHT300: Temperature: 27.52 C, Humidity: 66.80 %[0m
+[0;32mI (19826) SHT300: Temperature: 27.54 C, Humidity: 66.73 %[0m
+[0;32mI (20326) SHT300: Temperature: 27.54 C, Humidity: 66.74 %[0m
+[0;32mI (20826) SHT300: Temperature: 27.56 C, Humidity: 66.73 %[0m
+[0;32mI (21326) SHT300: Temperature: 27.54 C, Humidity: 66.86 %[0m
+[0;32mI (21826) SHT300: Temperature: 27.56 C, Humidity: 66.78 %[0m
+[0;32mI (22326) SHT300: Temperature: 27.51 C, Humidity: 66.76 %[0m
+[0;32mI (22826) SHT300: Temperature: 27.52 C, Humidity: 66.78 %[0m
+[0;32mI (23326) SHT300: Temperature: 27.54 C, Humidity: 66.76 %[0m
+[0;32mI (23826) SHT300: Temperature: 27.52 C, Humidity: 66.69 %[0m
+[0;32mI (24326) SHT300: Temperature: 27.52 C, Humidity: 66.76 %[0m
+[0;32mI (24826) SHT300: Temperature: 27.54 C, Humidity: 66.74 %[0m
+[0;32mI (25326) SHT300: Temperature: 27.51 C, Humidity: 66.70 %[0m
+[0;32mI (25826) SHT300: Temperature: 27.52 C, Humidity: 66.73 %[0m
+[0;32mI (26326) SHT300: Temperature: 27.54 C, Humidity: 66.81 %[0m
+[0;32mI (26826) SHT300: Temperature: 27.54 C, Humidity: 66.80 %[0m
+[0;32mI (27326) SHT300: Temperature: 27.55 C, Humidity: 66.80 %[0m
+[0;32mI (27826) SHT300: Temperature: 27.55 C, Humidity: 66.88 %[0m
+[0;32mI (28326) SHT300: Temperature: 27.52 C, Humidity: 66.80 %[0m
+[0;32mI (28826) SHT300: Temperature: 27.52 C, Humidity: 66.81 %[0m
+[0;32mI (29326) SHT300: Temperature: 27.53 C, Humidity: 66.74 %[0m
+[0;32mI (29826) SHT300: Temperature: 27.52 C, Humidity: 66.82 %[0m
+[0;32mI (30326) SHT300: Temperature: 27.53 C, Humidity: 66.83 %[0m
+[0;32mI (30826) SHT300: Temperature: 27.54 C, Humidity: 66.90 %[0m
+[0;32mI (31326) SHT300: Temperature: 27.57 C, Humidity: 66.83 %[0m
+[0;32mI (31826) SHT300: Temperature: 27.51 C, Humidity: 66.88 %[0m
+[0;32mI (32326) SHT300: Temperature: 27.52 C, Humidity: 66.77 %[0m
+[0;32mI (32826) SHT300: Temperature: 27.54 C, Humidity: 66.81 %[0m
+[0;32mI (33326) SHT300: Temperature: 27.51 C, Humidity: 66.79 %[0m
+[0;32mI (33826) SHT300: Temperature: 27.54 C, Humidity: 66.81 %[0m
+[0;32mI (34326) SHT300: Temperature: 27.50 C, Humidity: 66.77 %[0m
+[0;32mI (34826) SHT300: Temperature: 27.53 C, Humidity: 66.87 %[0m
+[0;32mI (35326) SHT300: Temperature: 27.52 C, Humidity: 66.86 %[0m
+[0;32mI (35826) SHT300: Temperature: 27.54 C, Humidity: 66.89 %[0m
+[0;32mI (36326) SHT300: Temperature: 27.56 C, Humidity: 66.85 %[0m
+[0;32mI (36826) SHT300: Temperature: 27.52 C, Humidity: 66.79 %[0m
+[0;32mI (37326) SHT300: Temperature: 27.54 C, Humidity: 66.83 %[0m
+[0;32mI (37826) SHT300: Temperature: 27.52 C, Humidity: 66.89 %[0m
+[0;32mI (38326) SHT300: Temperature: 27.54 C, Humidity: 66.85 %[0m
+[0;32mI (38826) SHT300: Temperature: 27.55 C, Humidity: 66.83 %[0m
+[0;32mI (39326) SHT300: Temperature: 27.52 C, Humidity: 66.89 %[0m
+[0;32mI (39826) SHT300: Temperature: 27.53 C, Humidity: 66.79 %[0m
+[0;32mI (40326) SHT300: Temperature: 27.50 C, Humidity: 66.81 %[0m
+[0;32mI (40826) SHT300: Temperature: 27.52 C, Humidity: 66.84 %[0m
+[0;32mI (41326) SHT300: Temperature: 27.52 C, Humidity: 66.84 %[0m
+[0;32mI (41826) SHT300: Temperature: 27.52 C, Humidity: 66.83 %[0m
+[0;32mI (42326) SHT300: Temperature: 27.55 C, Humidity: 66.80 %[0m
+[0;32mI (42826) SHT300: Temperature: 27.52 C, Humidity: 66.81 %[0m
+[0;32mI (43326) SHT300: Temperature: 27.53 C, Humidity: 66.82 %[0m
+[0;32mI (43826) SHT300: Temperature: 27.48 C, Humidity: 66.75 %[0m
+[0;32mI (44326) SHT300: Temperature: 27.52 C, Humidity: 66.85 %[0m
+[0;32mI (44826) SHT300: Temperature: 27.54 C, Humidity: 66.79 %[0m
+[0;32mI (45326) SHT300: Temperature: 27.56 C, Humidity: 66.81 %[0m
+[0;32mI (45826) SHT300: Temperature: 27.54 C, Humidity: 66.80 %[0m
+[0;32mI (46326) SHT300: Temperature: 27.53 C, Humidity: 66.87 %[0m
+[0;32mI (46826) SHT300: Temperature: 27.50 C, Humidity: 66.87 %[0m
+[0;32mI (47326) SHT300: Temperature: 27.52 C, Humidity: 66.84 %[0m
+[0;32mI (47826) SHT300: Temperature: 27.53 C, Humidity: 66.79 %[0m
+[0;32mI (48326) SHT300: Temperature: 27.54 C, Humidity: 66.87 %[0m
+[0;32mI (48826) SHT300: Temperature: 27.50 C, Humidity: 66.87 %[0m
